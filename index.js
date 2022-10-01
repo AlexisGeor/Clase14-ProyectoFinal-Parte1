@@ -15,4 +15,10 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/app", (req, res) => {
+    res.json({
+        ok: true
+    });
+});
+
 httpServer.listen(PORT, () => console.log("Servidor corriendo en el puerto", PORT));
